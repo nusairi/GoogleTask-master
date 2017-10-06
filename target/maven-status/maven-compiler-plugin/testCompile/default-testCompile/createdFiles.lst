@@ -1,0 +1,4 @@
+com\poc\rest\client\DoLogin.class
+com\poc\rest\client\test\GoogletaskPOC.class
+Cucumber\RunCukeTest.class
+com\poc\rest\client\GetBasicAuth.class
