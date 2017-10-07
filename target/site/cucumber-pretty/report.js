@@ -55,19 +55,35 @@ formatter.examples({
     },
     {
       "cells": [
-        "NewCucuTask1",
-        "muthulakshmi88\u0027s list"
+        "CucuTask1",
+        "Mir\u0027s list"
       ],
       "line": 12,
       "id": "googletask-service;create-task;;2"
     },
     {
       "cells": [
-        "NewCucuTask2",
-        "muthulakshmi88\u0027s list"
+        "CucuTask2",
+        "Mir\u0027s list"
       ],
       "line": 13,
       "id": "googletask-service;create-task;;3"
+    },
+    {
+      "cells": [
+        "CucuTask3",
+        "Mir\u0027s list"
+      ],
+      "line": 14,
+      "id": "googletask-service;create-task;;4"
+    },
+    {
+      "cells": [
+        "CucuTask4",
+        "Mir\u0027s list"
+      ],
+      "line": 15,
+      "id": "googletask-service;create-task;;5"
     }
   ],
   "keyword": "Examples"
@@ -97,7 +113,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "he requested task \"NewCucuTask1\" creation under taskList \"muthulakshmi88\u0027s list\"",
+  "name": "he requested task \"CucuTask1\" creation under taskList \"Mir\u0027s list\"",
   "matchedColumns": [
     0,
     1
@@ -110,34 +126,34 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "GetBasicAuth.valid_google_user_login()"
+  "location": "GoogleTaskTest.valid_google_user_login()"
 });
 formatter.result({
-  "duration": 1961567514,
+  "duration": 1216515962,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "NewCucuTask1",
+      "val": "CucuTask1",
       "offset": 19
     },
     {
-      "val": "muthulakshmi88\u0027s list",
-      "offset": 58
+      "val": "Mir\u0027s list",
+      "offset": 55
     }
   ],
-  "location": "GetBasicAuth.fetch_task_lists(String,String)"
+  "location": "GoogleTaskTest.fetch_task_lists(String,String)"
 });
 formatter.result({
-  "duration": 762519767,
+  "duration": 702399862,
   "status": "passed"
 });
 formatter.match({
-  "location": "GetBasicAuth.the_task_should_be_created()"
+  "location": "GoogleTaskTest.the_task_should_be_created()"
 });
 formatter.result({
-  "duration": 579874117,
+  "duration": 361014712,
   "status": "passed"
 });
 formatter.scenario({
@@ -165,7 +181,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "he requested task \"NewCucuTask2\" creation under taskList \"muthulakshmi88\u0027s list\"",
+  "name": "he requested task \"CucuTask2\" creation under taskList \"Mir\u0027s list\"",
   "matchedColumns": [
     0,
     1
@@ -178,38 +194,174 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "GetBasicAuth.valid_google_user_login()"
+  "location": "GoogleTaskTest.valid_google_user_login()"
 });
 formatter.result({
-  "duration": 4668485,
+  "duration": 2246522,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "NewCucuTask2",
+      "val": "CucuTask2",
       "offset": 19
     },
     {
-      "val": "muthulakshmi88\u0027s list",
-      "offset": 58
+      "val": "Mir\u0027s list",
+      "offset": 55
     }
   ],
-  "location": "GetBasicAuth.fetch_task_lists(String,String)"
+  "location": "GoogleTaskTest.fetch_task_lists(String,String)"
 });
 formatter.result({
-  "duration": 338397017,
+  "duration": 235898373,
   "status": "passed"
 });
 formatter.match({
-  "location": "GetBasicAuth.the_task_should_be_created()"
+  "location": "GoogleTaskTest.the_task_should_be_created()"
 });
 formatter.result({
-  "duration": 593842624,
+  "duration": 477599440,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "Create Task",
+  "description": "",
+  "id": "googletask-service;create-task;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Sanity"
+    },
+    {
+      "line": 4,
+      "name": "@Sunny"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "a valid google user is logged in",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "he requested task \"CucuTask3\" creation under taskList \"Mir\u0027s list\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "the task should be created",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "GoogleTaskTest.valid_google_user_login()"
+});
+formatter.result({
+  "duration": 2407047,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "CucuTask3",
+      "offset": 19
+    },
+    {
+      "val": "Mir\u0027s list",
+      "offset": 55
+    }
+  ],
+  "location": "GoogleTaskTest.fetch_task_lists(String,String)"
+});
+formatter.result({
+  "duration": 294879432,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GoogleTaskTest.the_task_should_be_created()"
+});
+formatter.result({
+  "duration": 455081258,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "Create Task",
+  "description": "",
+  "id": "googletask-service;create-task;;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Sanity"
+    },
+    {
+      "line": 4,
+      "name": "@Sunny"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "a valid google user is logged in",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "he requested task \"CucuTask4\" creation under taskList \"Mir\u0027s list\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "the task should be created",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "GoogleTaskTest.valid_google_user_login()"
+});
+formatter.result({
+  "duration": 1869638,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "CucuTask4",
+      "offset": 19
+    },
+    {
+      "val": "Mir\u0027s list",
+      "offset": 55
+    }
+  ],
+  "location": "GoogleTaskTest.fetch_task_lists(String,String)"
+});
+formatter.result({
+  "duration": 185269104,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GoogleTaskTest.the_task_should_be_created()"
+});
+formatter.result({
+  "duration": 368697719,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 17,
+  "line": 20,
   "name": "Move Task",
   "description": "",
   "id": "googletask-service;move-task",
@@ -217,32 +369,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 16,
+      "line": 19,
       "name": "@Sunny"
     },
     {
-      "line": 16,
+      "line": 19,
       "name": "@Sanity"
     }
   ]
 });
 formatter.step({
-  "line": 18,
+  "line": 21,
   "name": "a valid google user is logged in",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 19,
+  "line": 22,
   "name": "he requested to move the task \"\u003cTaskTitle\u003e\" under taskList \"\u003cTaskListName\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 23,
   "name": "the task should be moved",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 22,
+  "line": 25,
   "name": "",
   "description": "",
   "id": "googletask-service;move-task;",
@@ -252,30 +404,22 @@ formatter.examples({
         "TaskTitle",
         "TaskListName"
       ],
-      "line": 23,
+      "line": 26,
       "id": "googletask-service;move-task;;1"
     },
     {
       "cells": [
-        "NewTask_POC1",
-        "muthulakshmi88\u0027s list"
+        "CucuTask3",
+        "Mir\u0027s list"
       ],
-      "line": 24,
+      "line": 27,
       "id": "googletask-service;move-task;;2"
-    },
-    {
-      "cells": [
-        "NewTask_POC3",
-        "muthulakshmi88\u0027s list"
-      ],
-      "line": 25,
-      "id": "googletask-service;move-task;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 24,
+  "line": 27,
   "name": "Move Task",
   "description": "",
   "id": "googletask-service;move-task;;2",
@@ -283,23 +427,23 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 16,
+      "line": 19,
       "name": "@Sanity"
     },
     {
-      "line": 16,
+      "line": 19,
       "name": "@Sunny"
     }
   ]
 });
 formatter.step({
-  "line": 18,
+  "line": 21,
   "name": "a valid google user is logged in",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 19,
-  "name": "he requested to move the task \"NewTask_POC1\" under taskList \"muthulakshmi88\u0027s list\"",
+  "line": 22,
+  "name": "he requested to move the task \"CucuTask3\" under taskList \"Mir\u0027s list\"",
   "matchedColumns": [
     0,
     1
@@ -307,107 +451,39 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 23,
   "name": "the task should be moved",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "GetBasicAuth.valid_google_user_login()"
+  "location": "GoogleTaskTest.valid_google_user_login()"
 });
 formatter.result({
-  "duration": 2609293,
+  "duration": 1982128,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "NewTask_POC1",
+      "val": "CucuTask3",
       "offset": 31
     },
     {
-      "val": "muthulakshmi88\u0027s list",
-      "offset": 61
+      "val": "Mir\u0027s list",
+      "offset": 58
     }
   ],
-  "location": "GetBasicAuth.fetch_task_lists_to_move(String,String)"
+  "location": "GoogleTaskTest.fetch_task_lists_to_move(String,String)"
 });
 formatter.result({
-  "duration": 786346200,
+  "duration": 514216273,
   "status": "passed"
 });
 formatter.match({
-  "location": "GetBasicAuth.the_task_should_be_moved()"
+  "location": "GoogleTaskTest.the_task_should_be_moved()"
 });
 formatter.result({
-  "duration": 562858695,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 25,
-  "name": "Move Task",
-  "description": "",
-  "id": "googletask-service;move-task;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 16,
-      "name": "@Sanity"
-    },
-    {
-      "line": 16,
-      "name": "@Sunny"
-    }
-  ]
-});
-formatter.step({
-  "line": 18,
-  "name": "a valid google user is logged in",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 19,
-  "name": "he requested to move the task \"NewTask_POC3\" under taskList \"muthulakshmi88\u0027s list\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 20,
-  "name": "the task should be moved",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "GetBasicAuth.valid_google_user_login()"
-});
-formatter.result({
-  "duration": 3260385,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "NewTask_POC3",
-      "offset": 31
-    },
-    {
-      "val": "muthulakshmi88\u0027s list",
-      "offset": 61
-    }
-  ],
-  "location": "GetBasicAuth.fetch_task_lists_to_move(String,String)"
-});
-formatter.result({
-  "duration": 773528393,
-  "status": "passed"
-});
-formatter.match({
-  "location": "GetBasicAuth.the_task_should_be_moved()"
-});
-formatter.result({
-  "duration": 615931718,
+  "duration": 449892333,
   "status": "passed"
 });
 });

@@ -9,8 +9,11 @@ Then the task should be created
 
 Examples:
 | NewTaskTitle | TaskListName |
-|NewCucuTask1|Mir's list|
-|NewCucuTask2|Ali's list|
+|1|Mir's list|
+|2|Mir's list|
+|3|Mir's list|
+|4|Mir's list|
+
 
 
 @Sunny @Sanity
@@ -21,5 +24,4 @@ Then the task should be moved
 
 Examples:
 | TaskTitle | TaskListName |
-|NewTask_POC1|Mir's list|
-|NewTask_POC3|Ali's list|
+|3|Mir's list      |

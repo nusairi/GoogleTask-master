@@ -89,12 +89,12 @@ table.stats-table td {
             window.onload = function () {
                 var steps = Raphael("steps_chart");
                 steps.text(45, 280, "Steps").attr({ font: "30px sans-serif" });
-                steps.piechart(200, 150, 120, [ 12 ,  0.000001 ,  0.000001 ,  0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed", "%%.%% - Skipped", "%%.%% - Pending"], legendpos: "east", colors: ["#88dd11","#FBB917","#cc1134","#88aaff"]});
+                steps.piechart(200, 150, 120, [ 15 ,  0.000001 ,  0.000001 ,  0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed", "%%.%% - Skipped", "%%.%% - Pending"], legendpos: "east", colors: ["#88dd11","#FBB917","#cc1134","#88aaff"]});
 
 
                 var scenarios = Raphael("scenarios_chart");
                 scenarios.text(75, 280, "Scenarios").attr({ font: "30px sans-serif", fill: "white" });
-                scenarios.piechart(200, 150, 120, [ 4 , 0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed"], legendpos: "east", colors: ["#88dd11","#cc1134"], legendcolor: "white"});
+                scenarios.piechart(200, 150, 120, [ 5 , 0.000001 ], { legend: ["%%.%% - Passed", "%%.%% - Failed"], legendpos: "east", colors: ["#88dd11","#cc1134"], legendcolor: "white"});
             };
         </script>
         <noscript>
@@ -145,29 +145,29 @@ table.stats-table td {
           
           <tr>
           <td style="text-align:left;"><a id="stats-GoogleTask service" href="getA1BasicAuth.feature.html">GoogleTask service</a></td>
-          <td id="stats-number-scenarios-GoogleTask service">4</td>
-          <td id="stats-number-scenarios-passed-GoogleTask service">4</td>
+          <td id="stats-number-scenarios-GoogleTask service">5</td>
+          <td id="stats-number-scenarios-passed-GoogleTask service">5</td>
           <td id="stats-number-scenarios-failed-GoogleTask service">0</td>
-          <td id="stats-number-steps-GoogleTask service">12</td>
-          <td id="stats-number-steps-passed-GoogleTask service">12</td>
+          <td id="stats-number-steps-GoogleTask service">15</td>
+          <td id="stats-number-steps-passed-GoogleTask service">15</td>
           <td id="stats-number-steps-failed-GoogleTask service">0</td>
           <td id="stats-number-steps-skipped-GoogleTask service">0</td>
           <td id="stats-number-steps-pending-GoogleTask service">0</td>
-          <td id="stats-duration-GoogleTask service">6 secs and 985 ms</td>
+          <td id="stats-duration-GoogleTask service">5 secs and 269 ms</td>
           <td id="stats-status-GoogleTask service" style="background-color: #C5D88A;">passed</td>
           </tr>
       
 <tr>
 <td id="stats-total-features" style="background-color:lightgray;font-weight:bold;">1</td>
-<td id="stats-total-scenarios" style="background-color:lightgray;font-weight:bold;">4</td>
-<td id="stats-total-scenarios-passed" style="background-color:lightgray;font-weight:bold;">4</td>
+<td id="stats-total-scenarios" style="background-color:lightgray;font-weight:bold;">5</td>
+<td id="stats-total-scenarios-passed" style="background-color:lightgray;font-weight:bold;">5</td>
 <td id="stats-total-scenarios-failed" style="background-color:lightgray;font-weight:bold;">0</td>
-<td id="stats-total-steps" style="background-color:lightgray;font-weight:bold;">12</td>
-<td id="stats-total-steps-passed" style="background-color:lightgray;font-weight:bold;">12</td>
+<td id="stats-total-steps" style="background-color:lightgray;font-weight:bold;">15</td>
+<td id="stats-total-steps-passed" style="background-color:lightgray;font-weight:bold;">15</td>
 <td id="stats-total-steps-failed" style="background-color:lightgray;font-weight:bold;">0</td>
 <td id="stats-total-steps-skipped" style="background-color:lightgray;font-weight:bold;">0</td>
 <td id="stats-total-steps-pending" style="background-color:lightgray;font-weight:bold;">0</td>
-<td id="stats-total-duration" style="background-color:lightgray;font-weight:bold;">6 secs and 985 ms</td>
+<td id="stats-total-duration" style="background-color:lightgray;font-weight:bold;">5 secs and 269 ms</td>
 <td id="stats-total-totals" style="background-color:lightgray;font-weight:bold;">Totals</td>
 </tr></table>
 	</div>
@@ -179,7 +179,7 @@ table.stats-table td {
 	<div class="container_12">
 		<div class="grid_12 hr"></div>
 		<div class="grid_12 footer">
-			<p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.22 - 05-10-2017 23:54:10</p>
+			<p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.22 - 07-10-2017 14:31:29</p>
 		</div>
 	</div>
 	<div class="clear"></div>

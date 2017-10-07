@@ -49,6 +49,7 @@ static 	HttpURLConnection conn;
 	public void fetch_task_lists_to_move(String taskTitle, String taskListName) {
 		title = taskTitle;
 		taskList = getTaskID(taskListName);
+		System.out.println("MoveTask:" + title  + "\ntaskList :"+taskList.getId() );
 		try {
 			GoogletaskPOC.gettaskslistService(service, taskList.getId(), taskTitle);
 		} catch (IOException e) {
@@ -73,6 +74,7 @@ static 	HttpURLConnection conn;
 	@Then("^the task should be created$")
 	public void the_task_should_be_created() {
 		try {
+			System.out.println("taskList.getId()="+taskList.getId());
 			GoogletaskPOC.CreateTaskService(service,taskList.getId(),title);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

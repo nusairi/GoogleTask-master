@@ -12,35 +12,35 @@
         "steps": [
           {
             "result": {
-              "duration": 1961567514,
+              "duration": 1216515962,
               "status": "passed"
             },
             "line": 6,
             "name": "a valid google user is logged in",
             "match": {
-              "location": "GetBasicAuth.valid_google_user_login()"
+              "location": "GoogleTaskTest.valid_google_user_login()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 762519767,
+              "duration": 702399862,
               "status": "passed"
             },
             "line": 7,
-            "name": "he requested task \"NewCucuTask1\" creation under taskList \"muthulakshmi88\u0027s list\"",
+            "name": "he requested task \"CucuTask1\" creation under taskList \"Mir\u0027s list\"",
             "match": {
               "arguments": [
                 {
-                  "val": "NewCucuTask1",
+                  "val": "CucuTask1",
                   "offset": 19
                 },
                 {
-                  "val": "muthulakshmi88\u0027s list",
-                  "offset": 58
+                  "val": "Mir\u0027s list",
+                  "offset": 55
                 }
               ],
-              "location": "GetBasicAuth.fetch_task_lists(String,String)"
+              "location": "GoogleTaskTest.fetch_task_lists(String,String)"
             },
             "matchedColumns": [
               0,
@@ -50,13 +50,13 @@
           },
           {
             "result": {
-              "duration": 579874117,
+              "duration": 361014712,
               "status": "passed"
             },
             "line": 8,
             "name": "the task should be created",
             "match": {
-              "location": "GetBasicAuth.the_task_should_be_created()"
+              "location": "GoogleTaskTest.the_task_should_be_created()"
             },
             "keyword": "Then "
           }
@@ -82,35 +82,35 @@
         "steps": [
           {
             "result": {
-              "duration": 4668485,
+              "duration": 2246522,
               "status": "passed"
             },
             "line": 6,
             "name": "a valid google user is logged in",
             "match": {
-              "location": "GetBasicAuth.valid_google_user_login()"
+              "location": "GoogleTaskTest.valid_google_user_login()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 338397017,
+              "duration": 235898373,
               "status": "passed"
             },
             "line": 7,
-            "name": "he requested task \"NewCucuTask2\" creation under taskList \"muthulakshmi88\u0027s list\"",
+            "name": "he requested task \"CucuTask2\" creation under taskList \"Mir\u0027s list\"",
             "match": {
               "arguments": [
                 {
-                  "val": "NewCucuTask2",
+                  "val": "CucuTask2",
                   "offset": 19
                 },
                 {
-                  "val": "muthulakshmi88\u0027s list",
-                  "offset": 58
+                  "val": "Mir\u0027s list",
+                  "offset": 55
                 }
               ],
-              "location": "GetBasicAuth.fetch_task_lists(String,String)"
+              "location": "GoogleTaskTest.fetch_task_lists(String,String)"
             },
             "matchedColumns": [
               0,
@@ -120,13 +120,13 @@
           },
           {
             "result": {
-              "duration": 593842624,
+              "duration": 477599440,
               "status": "passed"
             },
             "line": 8,
             "name": "the task should be created",
             "match": {
-              "location": "GetBasicAuth.the_task_should_be_created()"
+              "location": "GoogleTaskTest.the_task_should_be_created()"
             },
             "keyword": "Then "
           }
@@ -143,7 +143,147 @@
         ]
       },
       {
-        "line": 24,
+        "line": 14,
+        "name": "Create Task",
+        "description": "",
+        "id": "googletask-service;create-task;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2407047,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a valid google user is logged in",
+            "match": {
+              "location": "GoogleTaskTest.valid_google_user_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 294879432,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "he requested task \"CucuTask3\" creation under taskList \"Mir\u0027s list\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CucuTask3",
+                  "offset": 19
+                },
+                {
+                  "val": "Mir\u0027s list",
+                  "offset": 55
+                }
+              ],
+              "location": "GoogleTaskTest.fetch_task_lists(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 455081258,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the task should be created",
+            "match": {
+              "location": "GoogleTaskTest.the_task_should_be_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity"
+          },
+          {
+            "line": 4,
+            "name": "@Sunny"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Create Task",
+        "description": "",
+        "id": "googletask-service;create-task;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1869638,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a valid google user is logged in",
+            "match": {
+              "location": "GoogleTaskTest.valid_google_user_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 185269104,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "he requested task \"CucuTask4\" creation under taskList \"Mir\u0027s list\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CucuTask4",
+                  "offset": 19
+                },
+                {
+                  "val": "Mir\u0027s list",
+                  "offset": 55
+                }
+              ],
+              "location": "GoogleTaskTest.fetch_task_lists(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 368697719,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the task should be created",
+            "match": {
+              "location": "GoogleTaskTest.the_task_should_be_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity"
+          },
+          {
+            "line": 4,
+            "name": "@Sunny"
+          }
+        ]
+      },
+      {
+        "line": 27,
         "name": "Move Task",
         "description": "",
         "id": "googletask-service;move-task;;2",
@@ -152,35 +292,35 @@
         "steps": [
           {
             "result": {
-              "duration": 2609293,
+              "duration": 1982128,
               "status": "passed"
             },
-            "line": 18,
+            "line": 21,
             "name": "a valid google user is logged in",
             "match": {
-              "location": "GetBasicAuth.valid_google_user_login()"
+              "location": "GoogleTaskTest.valid_google_user_login()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 786346200,
+              "duration": 514216273,
               "status": "passed"
             },
-            "line": 19,
-            "name": "he requested to move the task \"NewTask_POC1\" under taskList \"muthulakshmi88\u0027s list\"",
+            "line": 22,
+            "name": "he requested to move the task \"CucuTask3\" under taskList \"Mir\u0027s list\"",
             "match": {
               "arguments": [
                 {
-                  "val": "NewTask_POC1",
+                  "val": "CucuTask3",
                   "offset": 31
                 },
                 {
-                  "val": "muthulakshmi88\u0027s list",
-                  "offset": 61
+                  "val": "Mir\u0027s list",
+                  "offset": 58
                 }
               ],
-              "location": "GetBasicAuth.fetch_task_lists_to_move(String,String)"
+              "location": "GoogleTaskTest.fetch_task_lists_to_move(String,String)"
             },
             "matchedColumns": [
               0,
@@ -190,94 +330,24 @@
           },
           {
             "result": {
-              "duration": 562858695,
+              "duration": 449892333,
               "status": "passed"
             },
-            "line": 20,
+            "line": 23,
             "name": "the task should be moved",
             "match": {
-              "location": "GetBasicAuth.the_task_should_be_moved()"
+              "location": "GoogleTaskTest.the_task_should_be_moved()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 16,
-            "name": "@Sanity"
-          },
-          {
-            "line": 16,
-            "name": "@Sunny"
-          }
-        ]
-      },
-      {
-        "line": 25,
-        "name": "Move Task",
-        "description": "",
-        "id": "googletask-service;move-task;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3260385,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "a valid google user is logged in",
-            "match": {
-              "location": "GetBasicAuth.valid_google_user_login()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 773528393,
-              "status": "passed"
-            },
             "line": 19,
-            "name": "he requested to move the task \"NewTask_POC3\" under taskList \"muthulakshmi88\u0027s list\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "NewTask_POC3",
-                  "offset": 31
-                },
-                {
-                  "val": "muthulakshmi88\u0027s list",
-                  "offset": 61
-                }
-              ],
-              "location": "GetBasicAuth.fetch_task_lists_to_move(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 615931718,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the task should be moved",
-            "match": {
-              "location": "GetBasicAuth.the_task_should_be_moved()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
             "name": "@Sanity"
           },
           {
-            "line": 16,
+            "line": 19,
             "name": "@Sunny"
           }
         ]

@@ -16,12 +16,7 @@
 		<!-- Stub Dependencies -->
 		
 	
-	
-		<dependency>
-                     <groupId>Fillo</groupId>
-                     <artifactId>Fillo</artifactId>
-                     <version>1.12</version>
-              </dependency>
+
 	<!-- JSON dependency -->
 	<dependency>
 			<groupId>org.codeartisans</groupId>

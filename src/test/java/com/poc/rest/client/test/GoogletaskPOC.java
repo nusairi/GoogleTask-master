@@ -106,7 +106,8 @@ public class GoogletaskPOC {
     public static void CreateTaskService(Tasks service,String strtaskid,String strTaskName) throws IOException {
     	Task task = new Task();
     	task.setTitle(strTaskName);    	
-    	Task result = service.tasks().insert(strtaskid, task).execute();
+    	Task result = service.tasks()
+                .insert(strtaskid, task).execute();
     	System.out.println(result.getTitle());
     	System.out.printf("New Task %s (%s)\n",
     			 result.getTitle(),
